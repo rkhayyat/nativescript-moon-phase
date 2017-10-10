@@ -1,8 +1,8 @@
 {
-  "name": "nativescript-hijri",
+  "name": "nativescript-moon-phase",
   "version": "1.0.0",
-  "description": "Your awesome NativeScript plugin.",
-  "main": "hijri",
+  "description": "Nativescript Plugin to show photo of the moon phase according to the passed date",
+  "main": "moon-phase",
   "typings": "index.d.ts",
   "nativescript": {
     "platforms": {
@@ -18,13 +18,13 @@
     "test.ios": "cd demo && tns test ios --emulator",
     "test.ios.device": "cd demo && tns test ios",
     "test.android": "cd demo && tns test android",
-    "preparedemo": "npm run build && cd demo && tns plugin remove nativescript-hijri && tns plugin add .. && tns install",
+    "preparedemo": "npm run build && cd demo && tns plugin remove nativescript-moon-phase && tns plugin add .. && tns install",
     "setup": "npm i && cd demo && npm i && cd .. && npm run build && cd demo && tns plugin add .. && cd ..",
     "postclone": "npm i && node scripts/postclone.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/rkhayyat/nativescript-hijri.git"
+    "url": "https://github.com/rkhayyat/nativescript-moon-phase.git"
   },
   "keywords": [
     "NativeScript",
@@ -33,14 +33,14 @@
     "iOS"
   ],
   "author": {
-    "name": "Your Name",
-    "email": "youremail@yourdomain.com"
+    "name": "Rachid AL KAYAT",
+    "email": "rasheedkhayyat@gmail.com"
   },
   "bugs": {
-    "url": "https://github.com/rkhayyat/nativescript-hijri/issues"
+    "url": "https://github.com/rkhayyat/nativescript-moon-phase/issues"
   },
   "license": "MIT",
-  "homepage": "https://github.com/rkhayyat/nativescript-hijri",
+  "homepage": "https://github.com/rkhayyat/nativescript-moon-phase",
   "readmeFilename": "README.md",
   "devDependencies": {
     "tns-core-modules": "~3.0.0",

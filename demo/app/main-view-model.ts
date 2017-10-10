@@ -1,6 +1,6 @@
 import {Observable, fromObject} from 'data/observable';
 import { DatePicker } from "ui/date-picker";
-import {Hijri, islamicDateObject} from 'nativescript-hijri';
+import {Hijri, islamicDateObject} from 'nativescript-moon-phase';
 
 
 export class HelloWorldModel extends Observable {
@@ -16,7 +16,6 @@ public hijri: Hijri;
 
     this.hijri = new Hijri(currentDate,0);
     this.dayWeekText =this.hijri.getDayName_Ar;
-    // this.dayWeekNumber = this.hijri.hijri_ar.dayOfWeek;
     this.dayMonthNumber = this.hijri.hijri_ar.dayOfMonth;
     this.monthText = this.hijri.getMonthName_Ar;
     this.monthNumber = this.hijri.getMonth;

@@ -2,7 +2,7 @@ import * as observable from 'data/observable';
 import * as pages from 'ui/page';
 import { DatePicker } from "ui/date-picker";
 import {HelloWorldModel} from './main-view-model';
-import {Hijri, islamicDateObject} from 'nativescript-hijri';
+import {Hijri, islamicDateObject} from 'nativescript-moon-phase';
 import label = require("ui/label");
 var view = require("ui/core/view");
 var MainViewModel = require("./main-view-model");

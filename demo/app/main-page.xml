@@ -1,5 +1,9 @@
-<Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="pageLoaded" class="page">
+<Page 
+ xmlns="http://schemas.nativescript.org/tns.xsd" 
+  xmlns:customControls="nativescript-moon-phase"
+ loaded="pageLoaded" class="page">
   <StackLayout class="p-20">
+  <customControls:MoonPhase />
     <DatePicker id="date" loaded="onPickerLoaded" dateChange="onDateChanged" verticalAlignment="center">
     </DatePicker>
     <Button text="Valider" tap="see"></Button>
