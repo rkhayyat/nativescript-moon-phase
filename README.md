@@ -1,15 +1,15 @@
-[![npm](https://img.shields.io/npm/v/nativescript-hijri.svg)](https://www.npmjs.com/package/nativescript-hijri)
-[![npm](https://img.shields.io/npm/dt/nativescript-hijri.svg?label=npm%20downloads)](https://www.npmjs.com/package/nativescript-hijri)
+[![npm](https://img.shields.io/npm/v/nativescript-hijri.svg)](https://www.npmjs.com/package/nativescript-moon-phase)
+[![npm](https://img.shields.io/npm/dt/nativescript-hijri.svg?label=npm%20downloads)](https://www.npmjs.com/package/nativescript-moon-phase)
 [![twitter: @rakhayyat](https://img.shields.io/badge/twitter-%40rakhayyat-2F98C1.svg)](https://twitter.com/rakhayyat)
 
-[![NPM](https://nodei.co/npm/nativescript-hijri.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/nativescript-hijri/)
+[![NPM](https://nodei.co/npm/nativescript-hijri.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/nativescript-moon-phase/)
 
-# Nativescript Hijri plugin
-This plugin is inspired by https://github.com/arabiaweather/hijri-date
+# Nativescript moon phase plugin
+This plugin is a complementary to my previous plugin that converts from gregorian to hijri dates https://github.com/rkhayyat/nativescript-hijri
 
-# Nativescript-hijri
+# Nativescript-moon-phase
 
-Hijri plugin allow you to convert gregorian date to islamic hijri date. 
+Moon Phase plugin allows you show the moon phase for a given date. 
 <p align="center">
   <img src="https://github.com/rkhayyat/nativescript-hijri/blob/master/screenshot/nativescript-hijri.gif" width="300"/>
 </p>
@@ -17,7 +17,7 @@ Hijri plugin allow you to convert gregorian date to islamic hijri date.
 ## Installation
 
 ```javascript
-tns plugin add nativescript-hijri
+tns plugin add nativescript-moon-phase
 ```
 
 ## Usage 
