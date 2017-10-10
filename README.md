@@ -2,7 +2,7 @@
 [![npm](https://img.shields.io/npm/dt/nativescript-moon-phase.svg?label=npm%20downloads)](https://www.npmjs.com/package/nativescript-moon-phase)
 [![twitter: @rakhayyat](https://img.shields.io/badge/twitter-%40rakhayyat-2F98C1.svg)](https://twitter.com/rakhayyat)
 
-[![NPM](https://nodei.co/npm/nativescript-hijri.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/nativescript-moon-phase/)
+[![NPM](https://nodei.co/npm/nativescript-moon-phase.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/nativescript-moon-phase/)
 
 # Nativescript moon phase plugin
 This plugin is a complementary to my previous plugin that converts from gregorian to hijri dates https://github.com/rkhayyat/nativescript-hijri
