@@ -11,7 +11,7 @@ This plugin is a complementary to my previous plugin that converts from gregoria
 
 Moon Phase plugin allows you show the moon phase for a given date. 
 <p align="center">
-  <img src="https://github.com/rkhayyat/nativescript-hijri/blob/master/screenshot/nativescript-hijri.gif" width="300"/>
+  <img src="https://github.com/rkhayyat/nativescript-hijri/blob/master/screenshot/nativescript-moon.gif" width="300"/>
 </p>
 
 ## Installation
