@@ -2,17 +2,17 @@
   "nativescript": {
     "id": "org.nativescript.demo",
     "tns-ios": {
-      "version": "2.5.0"
+      "version": "3.0.0"
     },
     "tns-android": {
-      "version": "2.5.0"
+      "version": "3.2.0"
     }
   },
   "dependencies": {
     "nativescript-moon-phase": "file:///C:\\nativescript\\moon-phase\\nativescript-hijri",
     "nativescript-theme-core": "^1.0.2",
     "nativescript-unit-test-runner": "^0.3.4",
-    "tns-core-modules": "~2.5.2"
+    "tns-core-modules": "^3.0.1"
   },
   "devDependencies": {
     "babel-traverse": "6.12.0",
@@ -25,6 +25,6 @@
     "karma-nativescript-launcher": "^0.4.0",
     "lazy": "1.0.11",
     "nativescript-dev-typescript": "~0.3.7",
-    "typescript": "~2.1.0"
+    "typescript": "~2.2.2"
   }
 }

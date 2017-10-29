@@ -1,7 +1,5 @@
 export  const Arabic = {
-    /*constructor(){
-        
-              };*/
+
                     wdNames: [
                                 'الأحد',
                                 'الاثنين',
@@ -28,9 +26,6 @@ export  const Arabic = {
                     ]
   };
   export  const English = {
-      /*constructor(){
-
-      };*/
                     wdNames: [
                                 'Sunday',
                                 'Monday',

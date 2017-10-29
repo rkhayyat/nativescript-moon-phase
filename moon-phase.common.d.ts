@@ -1,4 +1,5 @@
 import { Observable } from 'data/observable';
+import { Property } from "tns-core-modules/ui/core/properties";
 import { Image } from 'tns-core-modules/ui/image';
 export declare class Common extends Observable {
     hijri_ar: islamicDateObject;
@@ -32,5 +33,5 @@ export declare class islamicDateObject {
     year: number;
 }
 export declare class MoonPhaseBase extends Image {
-    constructor();
 }
+export declare const dateProperty: Property<MoonPhaseBase, any[]>;
