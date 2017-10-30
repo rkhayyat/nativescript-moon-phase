@@ -11,8 +11,6 @@ export class MoonPhase extends MoonPhaseBase {
     }
 
     [dateProperty.setNative](value) {
-        // let items = value;
-        //console.log('this is the value',value);
         this.src = moonImage[Utils.getDay(value, 0)];
         this.width = 100;
     };
