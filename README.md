@@ -53,8 +53,8 @@ public DateValue: Date;
 
     this.DateValue = currentDate;
   }
-}```
-
+}
+```
 ### main-page
 ```typescript
 import * as observable from 'tns-core-modules/data/observable';
