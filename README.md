@@ -80,7 +80,8 @@ exports.see = function(args) {
     var day = view.getViewById(parent,"date").day;
     var convertDate = new Date(year, month-1, day);
     page.bindingContext = new HelloWorldModel(convertDate);
-}```
+}
+```
 
 ## API
 
