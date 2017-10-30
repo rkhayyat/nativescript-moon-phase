@@ -24,26 +24,64 @@ tns plugin add nativescript-moon-phase
 
 ## Typescript NativeScript
 
+### XML
+```xml
+<Page 
+ xmlns="http://schemas.nativescript.org/tns.xsd" 
+  xmlns:customControls="nativescript-moon-phase"
+ loaded="pageLoaded" class="page">
+  <StackLayout class="p-20">
+  <customControls:MoonPhase items="{{ DateValue }}" />
+    <DatePicker id="date" loaded="onPickerLoaded" dateChange="onDateChanged" verticalAlignment="center">
+    </DatePicker>
+    <Button text="Valider" tap="see"></Button>
+  </StackLayout>
+</Page>
+```
+
 ### main-view-model
 ```typescript
-import {Observable} from 'data/observable';
-import {Hijri, islamicDateObject} from 'nativescript-hijri';
-
+import {Observable} from 'tns-core-modules/data/observable';
+import {Hijri} from 'nativescript-moon-phase';
 
 export class HelloWorldModel extends Observable {
-  public message: string;
-  private hijri: Hijri;
+public monthText : string;
+public DateValue: Date;
 
-  constructor() {
+  constructor(currentDate) {
     super();
 
-    this.hijri = new Hijri(new Date,0);
-    this.message = this.hijri.hijri_en.dayOfWeekText;
-    console.dir(this.hijri.hijri_en);
-
+    this.DateValue = currentDate;
   }
+}```
+
+### main-page
+```typescript
+
+import * as observable from 'tns-core-modules/data/observable';
+import * as pages from 'tns-core-modules/ui/page';
+import { DatePicker } from "tns-core-modules/ui/date-picker";
+import {HelloWorldModel} from './main-view-model';
+var view = require("ui/core/view");
+var MainViewModel = require("./main-view-model");
+
+let page;
+
+// Event handler for Page 'loaded' event attached in main-page.xml
+export function pageLoaded(args: observable.EventData) {
+    page = <pages.Page>args.object;
+    page.bindingContext = new HelloWorldModel(new Date());
 }
-```
+
+exports.see = function(args) {
+    var sender = args.object;
+    var parent = sender.parent;
+    var year = view.getViewById(parent,"date").year;
+    var month = view.getViewById(parent,"date").month
+    var day = view.getViewById(parent,"date").day;
+    var convertDate = new Date(year, month-1, day);
+    page.bindingContext = new HelloWorldModel(convertDate);
+}```
 
 ## API
 
@@ -51,8 +89,7 @@ export class HelloWorldModel extends Observable {
 
 | Method | Return | Description |
 | --- | --- | --- |
-| `hijri_ar` | `Object:islamicDateObject` | Accepts 2 Arguments Date , Date Adjustment by days.<br> return Object of islamicDateObject where day and month are written in arabic alphabet.|
-| `hijri_en`| `Object:islamicDateObject` | Accepts 2 Arguments Date , Date Adjustment by days.<br> return Object of islamicDateObject where day and month are written in English alphabet. |
+| `items` | `Date` | Date passed to show the corseponding moon phase image. |
 
 ## NativeBaguette 🥖
 
