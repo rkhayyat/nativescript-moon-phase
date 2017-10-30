@@ -57,7 +57,6 @@ public DateValue: Date;
 
 ### main-page
 ```typescript
-
 import * as observable from 'tns-core-modules/data/observable';
 import * as pages from 'tns-core-modules/ui/page';
 import { DatePicker } from "tns-core-modules/ui/date-picker";
