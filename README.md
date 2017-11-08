@@ -5,7 +5,7 @@
 [![NPM](https://nodei.co/npm/nativescript-moon-phase.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/nativescript-moon-phase/)
 
 # Nativescript moon phase plugin
-This plugin is a complementary to my previous plugin that converts from gregorian to hijri dates https://github.com/rkhayyat/nativescript-hijri
+This plugin is a complementary to my previous one that converts from gregorian to hijri dates https://github.com/rkhayyat/nativescript-hijri
 
 # Nativescript-moon-phase
 
